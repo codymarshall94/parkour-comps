@@ -7,20 +7,27 @@ interface Item {
 }
 
 export default function BoardItem({ name, country, place }: Item) {
-  const placing = {
-    1: "#FFD700",
-    2: "#C0C0C0",
-    3: "#CD7F32",
-  };
+  const isOdd = place % 2 === 1;
+
   return (
-    <div className="flex justify-between align-center border-2 border-black p-4">
-      <p
-        className={`text-2xl font-bold bg-[#FFD700] w-12 h-12 flex justify-center items-center`}
-      >
-        {place}
-      </p>
-      <p className="text-2xl">{country}</p>
-      <h3 className="text-2xl font-bold">{name}</h3>
+    <div
+      className={`flex justify-between align-center p-4 ${
+        isOdd ? "bg-white" : "bg-[#e2e3df]"
+      } shadow-lg`}
+    >
+      <div className="flex items-center">
+        <div
+          className={`text-lg text-white bg-[#BD2A47] w-12 h-12 rounded flex justify-center items-center`}
+        >
+          {place}
+        </div>
+      </div>
+      <div className="flex items-center">
+        <h3 className="text-lg font-bold">{name}</h3>
+      </div>
+      <div className="flex items-center">
+        <p className="text-lg">{country}</p>
+      </div>
     </div>
   );
 }
