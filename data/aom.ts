@@ -1,5 +1,7 @@
 export const AOM_COMPETITIONS = {
   name: "Art Of Motion",
+  background: "/images/aom.jpg",
+  host: "Red Bull",
   years: [
     {
       year: 2007,
@@ -10,17 +12,17 @@ export const AOM_COMPETITIONS = {
           men: [
             {
               name: "Ryan Doyle",
-              country: "United Kingdom",
+              country: "GBR",
               place: 1,
             },
             {
               name: "Victor Lopez",
-              country: "United States",
+              country: "USA",
               place: 2,
             },
             {
               name: "Marcus Gustafsson",
-              country: "Sweden",
+              country: "SWE",
               place: 3,
             },
           ],
@@ -37,17 +39,17 @@ export const AOM_COMPETITIONS = {
           men: [
             {
               name: "Paul Joseph",
-              country: "United Kingdom",
+              country: "GBR",
               place: 1,
             },
             {
               name: "Tim Shieff",
-              country: "United Kingdom",
+              country: "GBR",
               place: 2,
             },
             {
               name: "Marcus Gustafsson",
-              country: "Sweden",
+              country: "SWE",
               place: 3,
             },
           ],
@@ -64,17 +66,17 @@ export const AOM_COMPETITIONS = {
           men: [
             {
               name: "Delyan Dimitrov",
-              country: "Bulgaria",
+              country: "BGR",
               place: 1,
             },
             {
               name: "Jason Paul",
-              country: "Germany",
+              country: "DEU",
               place: 2,
             },
             {
               name: "Tim Shieff",
-              country: "United Kingdom",
+              country: "GBR",
               place: 3,
             },
           ],
@@ -91,17 +93,17 @@ export const AOM_COMPETITIONS = {
           men: [
             {
               name: "Jason Paul",
-              country: "Germany",
+              country: "DEU",
               place: 1,
             },
             {
               name: "Yoann Leroux",
-              country: "France",
+              country: "FRA",
               place: 2,
             },
             {
               name: "Pavel Petkuns",
-              country: "Latvia",
+              country: "LVA",
               place: 3,
             },
           ],
@@ -118,17 +120,17 @@ export const AOM_COMPETITIONS = {
           men: [
             {
               name: "Yoann Leroux",
-              country: "France",
+              country: "FRA",
               place: 1,
             },
             {
               name: "Jason Paul",
-              country: "Germany",
+              country: "DEU",
               place: 2,
             },
             {
               name: "Kyle Mendoza",
-              country: "United States",
+              country: "USA",
               place: 3,
             },
           ],
@@ -145,17 +147,17 @@ export const AOM_COMPETITIONS = {
           men: [
             {
               name: "Jason Paul",
-              country: "Germany",
+              country: "DEU",
               place: 1,
             },
             {
               name: "Pip Andersen",
-              country: "United Kingdom",
+              country: "GBR",
               place: 2,
             },
             {
               name: "Marcus Gustafsson",
-              country: "Sweden",
+              country: "SWE",
               place: 3,
             },
           ],
@@ -166,23 +168,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2011,
       date: "2011-03-20",
-      location: "United Kingdom London, Great Britain",
+      location: "United Kingdom London, GBR",
       events: {
         style: {
           men: [
             {
               name: "Tim Shieff",
-              country: "United Kingdom",
+              country: "GBR",
               place: 1,
             },
             {
               name: "Marcus Gustafsson",
-              country: "Sweden",
+              country: "SWE",
               place: 2,
             },
             {
               name: "Ryan Doyle",
-              country: "United Kingdom",
+              country: "GBR",
               place: 3,
             },
           ],
@@ -193,23 +195,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2011,
       date: "2011-07-30",
-      location: "Japan Yokohama, Japan",
+      location: "Japan Yokohama, JPN",
       events: {
         style: {
           men: [
             {
               name: "Jason Paul",
-              country: "Germany",
+              country: "DEU",
               place: 1,
             },
             {
               name: "Pavel Petkuns",
-              country: "Latvia",
+              country: "LVA",
               place: 2,
             },
             {
               name: "Kie Willis",
-              country: "United Kingdom",
+              country: "GBR",
               place: 3,
             },
           ],
@@ -220,23 +222,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2011,
       date: "2011-08-13",
-      location: "Brazil São Paulo, Brazil",
+      location: "Brazil São Paulo, BRA",
       events: {
         style: {
           men: [
             {
               name: "Ryan Doyle",
-              country: "United Kingdom",
+              country: "GBR",
               place: 1,
             },
             {
               name: "Jason Paul",
-              country: "Germany",
+              country: "DEU",
               place: 2,
             },
             {
               name: "Tim Shieff",
-              country: "United Kingdom",
+              country: "GBR",
               place: 3,
             },
           ],
@@ -253,17 +255,17 @@ export const AOM_COMPETITIONS = {
           men: [
             {
               name: "Marcus Gustafsson",
-              country: "Sweden",
+              country: "SWE",
               place: 1,
             },
             {
               name: "Tim Shieff",
-              country: "United Kingdom",
+              country: "GBR",
               place: 2,
             },
             {
               name: "Pip Andersen",
-              country: "United Kingdom",
+              country: "GBR",
               place: 3,
             },
           ],
@@ -274,23 +276,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2011,
       date: "2011-10-09",
-      location: "Greece Santorini, Greece",
+      location: "Greece Santorini, GRC",
       events: {
         style: {
           men: [
             {
               name: "Pavel Petkuns",
-              country: "Latvia",
+              country: "LVA",
               place: 1,
             },
             {
               name: "Yoann Leroux",
-              country: "France",
+              country: "FRA",
               place: 2,
             },
             {
               name: "Gaetan Bouillet",
-              country: "Belgium",
+              country: "BEL",
               place: 3,
             },
           ],
@@ -301,23 +303,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2012,
       date: "2012-09-08",
-      location: "Switzerland Lavertezzo, Switzerland",
+      location: "Switzerland Lavertezzo, CHE",
       events: {
         style: {
           men: [
             {
               name: "Pavel Petkuns",
-              country: "Latvia",
+              country: "LVA",
               place: 1,
             },
             {
               name: "Slava Petin",
-              country: "Latvia",
+              country: "LVA",
               place: 2,
             },
             {
               name: "Josh Yadon",
-              country: "United States",
+              country: "USA",
               place: 3,
             },
           ],
@@ -328,23 +330,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2012,
       date: "2012-09-28",
-      location: "Greece Santorini, Greece",
+      location: "Greece Santorini, GRC",
       events: {
         style: {
           men: [
             {
               name: "Pavel Petkuns",
-              country: "Latvia",
+              country: "LVA",
               place: 1,
             },
             {
               name: "Marcus Gustafsson",
-              country: "Sweden",
+              country: "SWE",
               place: 2,
             },
             {
               name: "Jason Paul",
-              country: "Germany",
+              country: "DEU",
               place: 3,
             },
           ],
@@ -355,23 +357,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2013,
       date: "2013-09-14",
-      location: "Greece Santorini, Greece",
+      location: "Greece Santorini, GRC",
       events: {
         style: {
           men: [
             {
               name: "Cory DeMeyers",
-              country: "United States",
+              country: "USA",
               place: 1,
             },
             {
               name: "Alexander Baiturin",
-              country: "Russia",
+              country: "RUS",
               place: 2,
             },
             {
               name: "Jesse La Flair",
-              country: "United States",
+              country: "USA",
               place: 3,
             },
           ],
@@ -382,23 +384,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2014,
       date: "2014-10-04",
-      location: "Greece Santorini, Greece",
+      location: "Greece Santorini, GRC",
       events: {
         style: {
           men: [
             {
               name: "Dimitris Kyrsanidis",
-              country: "Greece",
+              country: "GRC",
               place: 1,
             },
             {
               name: "Pavel Petkuns",
-              country: "Latvia",
+              country: "LVA",
               place: 2,
             },
             {
               name: "Alexander Baiturin",
-              country: "Russia",
+              country: "RUS",
               place: 3,
             },
           ],
@@ -409,40 +411,40 @@ export const AOM_COMPETITIONS = {
     {
       year: 2015,
       date: "2015-10-03",
-      location: "Greece Santorini, Greece",
+      location: "Greece Santorini, GRC",
       events: {
         style: {
           men: [
             {
               name: "Dimitris Kyrsanidis",
-              country: "Greece",
+              country: "GRC",
               place: 1,
             },
             {
               name: "Pavel Petkuns",
-              country: "Latvia",
+              country: "LVA",
               place: 2,
             },
             {
               name: "Jesse Peveril",
-              country: "Canada",
+              country: "CAN",
               place: 3,
             },
           ],
           women: [
             {
               name: "Luci Romberg",
-              country: "United States",
+              country: "USA",
               place: 1,
             },
             {
               name: "Aleksandra Shevchenko",
-              country: "Russia",
+              country: "RUS",
               place: 2,
             },
             {
               name: "Pamela Forster",
-              country: "Austria",
+              country: "AUT",
               place: 3,
             },
           ],
@@ -454,23 +456,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2016,
       date: "2016-10-01",
-      location: "Greece Santorini, Greece",
+      location: "Greece Santorini, GRC",
       events: {
         style: {
           men: [
             {
               name: "Bart van der Linden",
-              country: "Netherlands",
+              country: "NLD",
               place: 1,
             },
             {
               name: "Alfred Scott",
-              country: "United States",
+              country: "USA",
               place: 2,
             },
             {
               name: "Joey Adrian",
-              country: "United States",
+              country: "USA",
               place: 3,
             },
           ],
@@ -482,17 +484,17 @@ export const AOM_COMPETITIONS = {
         competitors: [
           {
             name: "Lynn Jung",
-            country: "Luxembourg",
+            country: "LUX",
             place: 1,
           },
           {
             name: "Sydney Olson",
-            country: "United States",
+            country: "USA",
             place: 2,
           },
           {
             name: "Pamela Forster",
-            country: "Austria",
+            country: "AUT",
             place: 3,
           },
         ],
@@ -501,23 +503,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2017,
       date: "2017-10-07",
-      location: "Greece Santorini, Greece",
+      location: "Greece Santorini, GRC",
       events: {
         style: {
           men: [
             {
               name: "Alexander Titarenko",
-              country: "Ukraine",
+              country: "UKR",
               place: 1,
             },
             {
               name: "Nathan Weston",
-              country: "United States",
+              country: "USA",
               place: 2,
             },
             {
               name: "Dimitris Kyrsanidis",
-              country: "Greece",
+              country: "GRC",
               place: 3,
             },
           ],
@@ -529,12 +531,12 @@ export const AOM_COMPETITIONS = {
         competitors: [
           {
             name: "Aleksandra Shevchenko",
-            country: "Russia",
+            country: "RUS",
             place: 1,
           },
           {
             name: "Pamela Forster",
-            country: "Austria",
+            country: "AUT",
             place: 2,
           },
         ],
@@ -543,23 +545,23 @@ export const AOM_COMPETITIONS = {
     {
       year: 2019,
       date: "2019-10-05",
-      location: "Italy Matera, Italy",
+      location: "Italy Matera, ITA",
       events: {
         style: {
           men: [
             {
               name: "Didi Alaoui",
-              country: "Morocco",
+              country: "MAR",
               place: 1,
             },
             {
               name: "Edward Scott",
-              country: "United Kingdom",
+              country: "GBR",
               place: 2,
             },
             {
               name: "Dimitris Kyrsanidis",
-              country: "Greece",
+              country: "GRC",
               place: 3,
             },
           ],
@@ -571,17 +573,17 @@ export const AOM_COMPETITIONS = {
         competitors: [
           {
             name: "Sydney Olson",
-            country: "United States",
+            country: "USA",
             place: 1,
           },
           {
             name: "Aleksandra Shevchenko",
-            country: "Russia",
+            country: "RUS",
             place: 2,
           },
           {
             name: "Silke Sollfrank",
-            country: "Germany",
+            country: "DEU",
             place: 3,
           },
         ],
@@ -590,41 +592,41 @@ export const AOM_COMPETITIONS = {
     {
       year: 2021,
       date: "2021-07-10",
-      location: "Piraeus, Greece",
+      location: "Piraeus, GRC",
       events: {
         style: {
           bestTrickMen: "Krystian Kowalewski",
           men: [
             {
               name: "Krystian Kowalewski",
-              country: "Poland",
+              country: "POL",
               place: 1,
             },
             {
               name: "Edward Scott",
-              country: "United Kingdom",
+              country: "GBR",
               place: 2,
             },
             {
               name: "Evgeny Aroyan",
-              country: "Russia",
+              country: "RUS",
               place: 3,
             },
           ],
           women: [
             {
               name: "Noa Diorgina",
-              country: "Netherlands",
+              country: "NLD",
               place: 1,
             },
             {
               name: "Lilou Ruel",
-              country: "France",
+              country: "FRA",
               place: 2,
             },
             {
               name: "Elise Bickley",
-              country: "United Kingdom",
+              country: "GBR",
               place: 3,
             },
           ],
@@ -634,45 +636,45 @@ export const AOM_COMPETITIONS = {
     {
       year: 2022,
       date: "2022-06-12",
-      location: "Astypalea, Greece",
+      location: "Astypalea, GRC",
       events: {
         style: {
           men: [
             {
               name: "Travis Verkaik",
-              country: "United Kingdom",
+              country: "GBR",
               place: 1,
             },
             {
               name: "Edward Scott",
-              country: "United Kingdom",
+              country: "GBR",
               place: 2,
             },
             {
               name: "Elis Torhall",
-              country: "Sweden",
+              country: "SWE",
               place: 3,
             },
           ],
           women: [
             {
               name: "Sydney Olson",
-              country: "United States",
+              country: "USA",
               place: 1,
             },
             {
               name: "Lilou Ruel",
-              country: "France",
+              country: "FRA",
               place: 2,
             },
             {
               name: "Noa Diorgina",
-              country: "Netherlands",
+              country: "NLD",
               place: 3,
             },
             {
               name: "Miranda Tibbling",
-              country: "Sweden",
+              country: "SWE",
               place: 3,
             },
           ],
