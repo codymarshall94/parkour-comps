@@ -2,10 +2,10 @@ import React from "react";
 
 export default function BoardHeader() {
   return (
-    <div className="flex justify-between border-2 border-black p-4">
+    <div className="flex justify-between rounded p-4 bg-[#BD2A47] text-white">
       <p>Place</p>
-      <p>Country</p>
       <p>Name</p>
+      <p>Country</p>
     </div>
   );
 }
