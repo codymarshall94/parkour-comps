@@ -2,7 +2,6 @@ import { AOM_COMPETITIONS } from "@/data/aom";
 import { PARKOUR_WORLD_CUP } from "@/data/fig";
 import { SPL_COMPETITIONS } from "@/data/spl";
 import { KOTC_COMPETITIONS } from "@/data/kotc";
-import { Fragment } from "react";
 
 const competitions = ["AOM", "PWC", "SPL", "KOTC"];
 
@@ -17,7 +16,7 @@ export default function CompetitionSelect({
   setCompetition: any;
   competition: string;
 }) {
-  let yearsDropdown: any;
+  let yearsDropdown: any = [];
 
   switch (competition) {
     case "AOM":
@@ -36,6 +35,12 @@ export default function CompetitionSelect({
       yearsDropdown = AOM_COMPETITIONS;
       break;
   }
+
+  const uniqueYears = Array.from(
+    new Set(yearsDropdown.years.map((yearObj: any) => yearObj.year))
+  );
+
+  yearsDropdown = uniqueYears;
 
   return (
     <div className="flex flex-col justify-center items-center bg-[#BD2A47] rounded my-4 p-4 w-full lg:w-1/2">
@@ -70,9 +75,9 @@ export default function CompetitionSelect({
             onChange={(e) => setYear(parseInt(e.target.value))}
             className="text-lg font-bold bg-white rounded p-4 mb-4"
           >
-            {yearsDropdown.years.map((eventYear: any, index: number) => (
-              <option key={index} value={eventYear.year}>
-                {eventYear.year}
+            {yearsDropdown.map((eventYear: string, index: number) => (
+              <option key={index} value={eventYear}>
+                {eventYear}
               </option>
             ))}
           </select>
