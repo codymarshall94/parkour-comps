@@ -35,10 +35,15 @@ interface YearEvent {
   };
 }
 
+type Event = "style" | "speed" | "skill";
+type Gender = "Men" | "Women";
+
 export default function Home() {
   const [year, setYear] = useState<number>(2022);
   const [competition, setCompetition] = useState<string>("AOM");
   const [shownEvents, setShownEvents] = useState<YearEvent[] | undefined>();
+  const [gender, setGender] = useState<Gender>("Men");
+  const [event, setEvent] = useState<Event>("style");
   const { selectedEventIndex, setSelectedEventIndex } = useEventSelection();
   const { loading, competitionInfo } = useCompetitionInfo(competition);
   const { name: eventName, host } = competitionInfo || {};
@@ -59,6 +64,18 @@ export default function Home() {
       setYear(firstYear);
     }
   };
+
+  useEffect(() => {
+    if (competitionInfo) {
+      const latestYear =
+        competitionInfo.years[competitionInfo.years.length - 1]?.year;
+      if (latestYear) {
+        setYear(latestYear);
+      }
+    }
+    setGender("Men");
+    setEvent("style");
+  }, [competitionInfo]);
 
   useEffect(() => {
     handleYearChange(year);
@@ -95,6 +112,14 @@ export default function Home() {
           />
           {shownEvents && (
             <CompetitionDashBoard
+              gender={gender}
+              setGender={
+                setGender as React.Dispatch<React.SetStateAction<string>>
+              }
+              event={event}
+              setEvent={
+                setEvent as React.Dispatch<React.SetStateAction<string>>
+              }
               shownEvents={shownEvents}
               eventName={eventName}
               host={host}

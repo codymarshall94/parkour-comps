@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import BoardItem from "./components/boarditem";
 import EventInfo from "./components/eventInfo";
 import BoardHeader from "./components/boardHeader";
@@ -10,7 +10,14 @@ interface Item {
   place: number;
 }
 
+type Event = "style" | "speed" | "skill";
+type Gender = "Men" | "Women";
+
 type CompetitionDashBoardProps = {
+  gender: Gender;
+  event: Event;
+  setGender: React.Dispatch<React.SetStateAction<string>>;
+  setEvent: React.Dispatch<React.SetStateAction<string>>;
   shownEvents: any[];
   eventName: string | undefined;
   host: string | undefined;
@@ -18,18 +25,17 @@ type CompetitionDashBoardProps = {
   setSelectedEventIndex: React.Dispatch<React.SetStateAction<number>>;
 };
 
-type Event = "style" | "speed" | "skill";
-type Gender = "Men" | "Women";
-
 export default function CompetitionDashBoard({
+  gender,
+  setGender,
+  event,
+  setEvent,
   shownEvents,
   eventName,
   host,
   selectedEventIndex,
   setSelectedEventIndex,
 }: CompetitionDashBoardProps) {
-  const [gender, setGender] = useState<Gender>("Men");
-  const [event, setEvent] = useState<Event>("style");
 
   if (!shownEvents || shownEvents.length === 0) {
     return <p>Loading...</p>;
@@ -41,6 +47,14 @@ export default function CompetitionDashBoard({
     shownEvents.length === 1
       ? shownEvents[0].events[event]
       : selectedEvent.events[event];
+
+  let menItems: Item[] = [];
+  let womenItems: Item[] = [];
+
+  if (eventConfig) {
+    menItems = gender === "Men" ? eventConfig.men || [] : [];
+    womenItems = gender === "Women" ? eventConfig.women || [] : [];
+  }
 
   const renderBoardItems = (items: Item[]) => {
     return items.map((item: Item) => (
