@@ -99,7 +99,7 @@ export default function Home() {
         layout="responsive"
         sizes="(max-width: 640px) 100vw, 50vw"
       />
-      <div className="p-2 lg:p-24 z-[2]">
+      <div className="p-2 pb-24 lg:p-24 z-[2]">
         <div className="text-lg lg:text-4xl font-bold text-white text-center absolute top-20 lg:top-0 left-0 w-full">
           <Image src={HomeSvg} alt="home" width={700} height={700} />
         </div>
