@@ -36,7 +36,7 @@ export default function DisplayBoard({
   return (
     <>
       <EventInfo shownEvent={shownEvent} eventName={eventName} host={host} />
-      <div className="bg-[#e2e3df] w-full p-8 rounded-lg lg:w-1/2">
+      <div className="bg-[#e2e3df] w-full p-2 lg:p-8 rounded-lg lg:w-1/2">
         <BoardToolbar setGender={setGender} setEvent={setEvent} />
         {eventConfig ? (
           <div className="flex flex-col justify-between align-center shadow-lg">

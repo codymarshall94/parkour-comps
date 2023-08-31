@@ -24,7 +24,7 @@ export default function EventInfo({
           {shownEvent.alias}
         </h3>
       </div>
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex md:flex-row justify-between">
         <div className="flex flex-col mb-4 md:mb-0">
           <span className="text-xl md:text-2xl font-bold text-gray-700">
             Year:
