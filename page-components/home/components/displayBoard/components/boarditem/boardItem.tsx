@@ -11,9 +11,7 @@ export default function BoardItem({ name, country, place }: Item) {
 
   return (
     <div
-      className={`flex justify-between align-center p-4 ${
-        isOdd ? "bg-white" : "bg-[#e2e3df]"
-      } shadow-lg`}
+      className={`flex justify-between align-center p-4 even:bg-white odd:bg-[#e2e3df]`}
     >
       <div className="flex items-center">
         <div
