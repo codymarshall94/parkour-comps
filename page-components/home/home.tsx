@@ -5,6 +5,7 @@ import CompetitionSelect from "./components/competitionSelect/competitionSelect"
 import DisplayBoard from "./components/displayBoard/displayBoard";
 import Image from "next/image";
 import { useCompetitionInfo } from "@/hooks/useCompetitionInfo";
+import HomeSvg from "@/public/images/home.svg";
 
 interface YearEvent {
   year: number;
@@ -53,9 +54,9 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col justify-between bg-black h-screen relative">
+    <main className="flex flex-col justify-center bg-black min-h-screen relative">
       <Image
-        className="absolute top-0 left-0 z-[1] grayscale opacity-50"
+        className="relative lg:absolute top-0 left-0 z-[1] grayscale opacity-50"
         src={competitionInfo?.background || "/images/background.jpg"}
         alt="background"
         style={{ objectFit: "cover" }}
@@ -64,10 +65,11 @@ export default function Home() {
         placeholder="blur"
         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArElEQVQ4T2NkoBAwUqifw"
       />
-      <div className="p-24 z-[2]">
-        <h1 className="text-4xl font-bold text-white text-center">
-          Parkour Competitions
-        </h1>
+      <div className="p-2 lg:p-24 z-[2]">
+        <div className="text-lg lg:text-4xl font-bold text-white text-center absolute top-20 lg:top-0 left-0 w-full">
+          <Image src={HomeSvg} alt="home" width={700} height={700} />
+        </div>
+
         <CompetitionSelect
           year={year}
           setYear={setYear}
