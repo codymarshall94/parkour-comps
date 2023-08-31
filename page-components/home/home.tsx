@@ -77,6 +77,9 @@ export default function Home() {
         height={1080}
         placeholder="blur"
         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAArElEQVQ4T2NkoBAwUqifw"
+        loading="lazy"
+        layout="responsive"
+        sizes="(max-width: 640px) 100vw, 50vw"
       />
       <div className="p-2 lg:p-24 z-[2]">
         <div className="text-lg lg:text-4xl font-bold text-white text-center absolute top-20 lg:top-0 left-0 w-full">
