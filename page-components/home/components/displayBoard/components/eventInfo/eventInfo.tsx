@@ -11,8 +11,7 @@ export default function EventInfo({
   eventName,
   host,
 }: EventInfoProps) {
-  console.log(shownEvents);
-  const { year, location, date } = shownEvents;
+  const { location, date } = shownEvents;
 
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     year: "numeric",
