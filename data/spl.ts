@@ -18,11 +18,16 @@ export const SPL_COMPETITIONS = {
             },
             {
               name: "Yoann Leroux",
-              country: "PAR",
+              country: "FRA",
               place: 2,
             },
             {
-              name: "Dylan Baker & Travis Graves",
+              name: "Dylan Baker",
+              country: "USA",
+              place: 3,
+            },
+            {
+              name: "Travis Graves",
               country: "USA",
               place: 3,
             },
@@ -52,12 +57,22 @@ export const SPL_COMPETITIONS = {
         style: {
           men: [
             {
-              name: "Joey Adrian & Yoann Leroux",
-              country: "USA & PAR",
+              name: "Joey Adrian",
+              country: "USA",
               place: 1,
             },
             {
-              name: "Cory DeMeyers & Luci Romberg",
+              name: "Yoann Leroux",
+              country: "FRA",
+              place: 1,
+            },
+            {
+              name: "Cory DeMeyers",
+              country: "USA",
+              place: 2,
+            },
+            {
+              name: "Luci Romberg",
               country: "USA",
               place: 2,
             },
@@ -115,17 +130,32 @@ export const SPL_COMPETITIONS = {
         style: {
           men: [
             {
-              name: "Joey Adrian & Danee Marmolejo",
+              name: "Joey Adrian",
               country: "USA",
               place: 1,
             },
             {
-              name: "Jared Davis & Jereme Sanders",
+              name: "Danee Marmolejo",
+              country: "USA",
+              place: 1,
+            },
+            {
+              name: "Jared Davis",
               country: "CAN",
               place: 2,
             },
             {
-              name: "Jesse LaFlair & Cory DeMeyers",
+              name: "Jereme Sanders",
+              country: "unknown", // Country information missing
+              place: 2,
+            },
+            {
+              name: "Jesse LaFlair",
+              country: "USA",
+              place: 3,
+            },
+            {
+              name: "Cory DeMeyers",
               country: "USA",
               place: 3,
             },
