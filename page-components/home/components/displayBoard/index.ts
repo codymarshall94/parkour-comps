@@ -1,3 +1,3 @@
-import DisplayBoard from "./displayBoard";
+import DisplayBoard from "./competitionDashboard";
 
 export default DisplayBoard;
