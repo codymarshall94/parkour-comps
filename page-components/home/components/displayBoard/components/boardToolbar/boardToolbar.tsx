@@ -1,25 +1,33 @@
 import Select from "@/components/select";
+import { useOptions } from "@/hooks/useOptions";
 import React from "react";
 
+type Event = "style" | "speed" | "skill";
+type Gender = "Men" | "Women";
+
+interface BoardToolbarProps {
+  shownEvents: any[];
+  gender: Gender;
+  event: Event;
+  setGender: React.Dispatch<React.SetStateAction<string>>;
+  setEvent: React.Dispatch<React.SetStateAction<string>>;
+  selectedEventIndex: number;
+  setSelectedEventIndex: React.Dispatch<React.SetStateAction<number>>;
+  eventDates: string[];
+}
+
 export default function BoardToolbar({
+  shownEvents,
   gender,
   event,
   setGender,
   setEvent,
-  shownEvents,
   selectedEventIndex,
   setSelectedEventIndex,
   eventDates,
-}: {
-  gender: string;
-  event: string;
-  setGender: any;
-  setEvent: any;
-  selectedEventIndex: number;
-  setSelectedEventIndex: React.Dispatch<React.SetStateAction<number>>;
-  eventDates: string[];
-  shownEvents: any[];
-}) {
+}: BoardToolbarProps) {
+  const { eventOptions, genderOptions } = useOptions(shownEvents);
+
   function formatDate(date: string) {
     return new Date(date).toLocaleDateString("en-US", {
       year: "numeric",
@@ -31,14 +39,14 @@ export default function BoardToolbar({
   return (
     <>
       <Select
-        options={["Men", "Women"]}
+        options={genderOptions}
         value={gender}
-        onChange={(value) => setGender(value)}
+        onChange={(value) => setGender(value as Gender)}
       />
       <Select
-        options={["Style", "Speed", "Skill"]}
+        options={eventOptions}
         value={event}
-        onChange={(value) => setEvent(value)}
+        onChange={(value) => setEvent(value as Event)}
       />
 
       {shownEvents.length > 1 && (
