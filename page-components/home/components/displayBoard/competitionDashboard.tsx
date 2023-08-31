@@ -60,7 +60,7 @@ export default function CompetitionDashBoard({
         eventName={eventName}
         host={host}
       />
-      <div className="bg-[#e2e3df] w-full p-2 lg:p-8 rounded-lg lg:w-1/2">
+      <div className="bg-[#e2e3df] w-full p-2 lg:p-8 rounded-lg lg:w-3/4 xl:w-1/2 ">
         <BoardToolbar
           eventDates={eventDates}
           shownEvents={shownEvents}

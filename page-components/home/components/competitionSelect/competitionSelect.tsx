@@ -43,7 +43,7 @@ export default function CompetitionSelect({
   yearsDropdown = uniqueYears;
 
   return (
-    <div className="flex flex-col justify-center items-center bg-[#BD2A47] rounded my-4 p-4 w-full lg:w-1/2">
+    <div className="flex flex-col justify-center items-center bg-[#BD2A47] rounded my-4 p-4 w-full lg:w-3/4 xl:w-1/2">
       <h2 className="text-lg font-bold text-center text-white mb-8">
         Choose a Competition
       </h2>
