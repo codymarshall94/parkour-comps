@@ -1,10 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+
+// Components
 import CompetitionSelect from "./components/competitionSelect/competitionSelect";
-import DisplayBoard from "./components/displayBoard/displayBoard";
+import CompetitionDashBoard from "./components/displayBoard/competitionDashboard";
 import Image from "next/image";
+
+// Hooks
 import { useCompetitionInfo } from "@/hooks/useCompetitionInfo";
+import { useEventSelection } from "@/hooks/useEventSelection";
+
+// Assets
 import HomeSvg from "@/public/images/home.svg";
 
 interface YearEvent {
@@ -30,24 +37,31 @@ interface YearEvent {
 export default function Home() {
   const [year, setYear] = useState<number>(2022);
   const [competition, setCompetition] = useState<string>("AOM");
-  const [shownEvent, setShownEvent] = useState<YearEvent | undefined>();
+  const [shownEvents, setShownEvents] = useState<YearEvent[] | undefined>();
+  const { selectedEventIndex, setSelectedEventIndex } = useEventSelection();
   const { loading, competitionInfo } = useCompetitionInfo(competition);
+  const { name: eventName, host } = competitionInfo || {};
 
-  useEffect(() => {
+  const handleYearChange = (newYear: number) => {
     if (!competitionInfo) return;
 
     const firstYear = competitionInfo.years[0]?.year;
 
-    const selectedEvent = competitionInfo.years.find(
-      (event: YearEvent) => event.year === year
+    const selectedEvents = competitionInfo.years.filter(
+      (event: YearEvent) => event.year === newYear
     );
 
-    if (selectedEvent) {
-      setShownEvent(selectedEvent);
+    if (selectedEvents.length > 0) {
+      setShownEvents(selectedEvents);
+      setSelectedEventIndex(0);
     } else {
       setYear(firstYear);
     }
-  }, [year, competitionInfo, shownEvent]);
+  };
+
+  useEffect(() => {
+    handleYearChange(year);
+  }, [year, competitionInfo]);
 
   if (loading && !competitionInfo) {
     return <p>Loading</p>;
@@ -75,11 +89,13 @@ export default function Home() {
             competition={competition}
             setCompetition={setCompetition}
           />
-          {shownEvent && (
-            <DisplayBoard
-              shownEvent={shownEvent}
-              eventName={competitionInfo?.name}
-              host={competitionInfo?.host}
+          {shownEvents && (
+            <CompetitionDashBoard
+              shownEvents={shownEvents}
+              eventName={eventName}
+              host={host}
+              selectedEventIndex={selectedEventIndex}
+              setSelectedEventIndex={setSelectedEventIndex}
             />
           )}
         </div>
