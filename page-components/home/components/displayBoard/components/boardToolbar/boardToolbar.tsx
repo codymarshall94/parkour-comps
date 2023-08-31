@@ -31,7 +31,7 @@ export default function BoardToolbar({
   return (
     <>
       <Select
-        options={["Men, Women"]}
+        options={["Men", "Women"]}
         value={gender}
         onChange={(value) => setGender(value)}
       />
