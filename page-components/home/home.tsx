@@ -56,10 +56,9 @@ export default function Home() {
   return (
     <main className="flex flex-col justify-center bg-black min-h-screen relative">
       <Image
-        className="relative lg:absolute top-0 left-0 z-[1] grayscale opacity-50"
+        className="relative lg:absolute top-0 left-0 z-[1] grayscale opacity-50 lg:h-[50%] w-full lg:object-cover"
         src={competitionInfo?.background || "/images/background.jpg"}
         alt="background"
-        style={{ objectFit: "cover" }}
         width={1920}
         height={1080}
         placeholder="blur"
@@ -69,20 +68,21 @@ export default function Home() {
         <div className="text-lg lg:text-4xl font-bold text-white text-center absolute top-20 lg:top-0 left-0 w-full">
           <Image src={HomeSvg} alt="home" width={700} height={700} />
         </div>
-
-        <CompetitionSelect
-          year={year}
-          setYear={setYear}
-          competition={competition}
-          setCompetition={setCompetition}
-        />
-        {shownEvent && (
-          <DisplayBoard
-            shownEvent={shownEvent}
-            eventName={competitionInfo?.name}
-            host={competitionInfo?.host}
+        <div className="flex flex-col justify-center items-center">
+          <CompetitionSelect
+            year={year}
+            setYear={setYear}
+            competition={competition}
+            setCompetition={setCompetition}
           />
-        )}
+          {shownEvent && (
+            <DisplayBoard
+              shownEvent={shownEvent}
+              eventName={competitionInfo?.name}
+              host={competitionInfo?.host}
+            />
+          )}
+        </div>
       </div>
     </main>
   );

@@ -12,7 +12,7 @@ export default function EventInfo({
   host,
 }: EventInfoProps) {
   return (
-    <div className="flex flex-col justify-center bg-white rounded-lg p-4 md:p-8 mb-8 lg:w-1/2">
+    <div className="flex flex-col justify-center bg-white rounded-lg p-4 md:p-8 mb-8 w-full lg:w-1/2">
       <h2 className="text-2xl md:text-4xl font-bold text-center text-black">
         {eventName}
       </h2>
