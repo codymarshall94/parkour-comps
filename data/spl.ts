@@ -828,5 +828,121 @@ export const SPL_COMPETITIONS = {
         },
       },
     },
+    {
+      year: 2023,
+      date: "2023-08-23",
+      location: "Vancouver, Canada",
+      alias: "SPL 2",
+      events: {
+        speed: {
+          men: [
+            {
+              name: "Tangui Van Shingen",
+              country: "NLD",
+              place: 1,
+            },
+            {
+              name: "Michael Sliger",
+              country: "USA",
+              place: 2,
+            },
+            {
+              name: "Ed Scott",
+              country: "UK",
+              place: 3,
+            },
+          ],
+          women: [
+            {
+              name: "Mirranda Tibbling",
+              country: "USA",
+              place: 1,
+            },
+            {
+              name: "Megan McQueen",
+              country: "USA",
+              place: 2,
+            },
+            {
+              name: "Taylor Carpenter",
+              country: "USA",
+              place: 3,
+            },
+          ],
+        },
+        style: {
+          men: [
+            {
+              name: "Elis Torhall",
+              country: "NOR",
+              place: 1,
+            },
+            {
+              name: "Sei Asakura",
+              country: "JPN",
+              place: 2,
+            },
+            {
+              name: "Calen Chan",
+              country: "USA",
+              place: 3,
+            },
+          ],
+          women: [
+            {
+              name: "Elise Bickley",
+              country: "UK",
+              place: 1,
+            },
+            {
+              name: "Nene Nagai",
+              country: "JPN",
+              place: 2,
+            },
+            {
+              name: "Noa Diorgina",
+              country: "DEU",
+              place: 3,
+            },
+          ],
+        },
+        skill: {
+          men: [
+            {
+              name: "Tim Champion",
+              country: "UK",
+              place: 1,
+            },
+            {
+              name: "Darryl Stingley",
+              country: "USA",
+              place: 2,
+            },
+            {
+              name: "Arturo Torres",
+              country: "MEX",
+              place: 3,
+            },
+          ],
+          women: [
+            {
+              name: "Rachel Gough",
+              country: "UK",
+              place: 1,
+            },
+            {
+              name: "Louisa Chan",
+              country: "TWN",
+              place: 2,
+            },
+            {
+              name: "Lani Wongkar",
+              country: "USA",
+              place: 3,
+            },
+          ],
+        },
+      },
+    },
   ],
 };
