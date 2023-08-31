@@ -36,5 +36,38 @@ export const KOTC_COMPETITIONS = {
         },
       },
     },
+    {
+      year: 2023,
+      date: "2023-08-27",
+      location: "Los Angeles, USA",
+      events: {
+        style: {
+          men: [
+            {
+              name: "Elis Torhall",
+              country: "SWE",
+              place: 1,
+            },
+            {
+              name: "Kaito Onuki",
+              country: "JPN",
+              place: 2,
+            },
+          ],
+          women: [
+            {
+              name: "Lilou Ruel",
+              country: "FRA",
+              place: 1,
+            },
+            {
+              name: "Nene Nagai",
+              country: "JPN",
+              place: 2,
+            },
+          ],
+        },
+      },
+    },
   ],
 };
