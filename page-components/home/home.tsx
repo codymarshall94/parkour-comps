@@ -13,6 +13,7 @@ import { useEventSelection } from "@/hooks/useEventSelection";
 
 // Assets
 import HomeSvg from "@/public/images/home.svg";
+import Loading from "@/components/loading";
 
 interface YearEvent {
   year: number;
@@ -64,7 +65,7 @@ export default function Home() {
   }, [year, competitionInfo]);
 
   if (loading && !competitionInfo) {
-    return <p>Loading</p>;
+    return <Loading />;
   }
 
   return (
