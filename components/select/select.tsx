@@ -15,7 +15,7 @@ export default function Select({ options, value, onChange }: SelectProps) {
     >
       {options.map((option) => (
         <option key={option} value={option}>
-          {option}
+          {option.charAt(0).toUpperCase() + option.slice(1)}
         </option>
       ))}
     </select>
