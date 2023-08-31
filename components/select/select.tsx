@@ -11,7 +11,7 @@ export default function Select({ options, value, onChange }: SelectProps) {
     <select
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="text-lg font-bold bg-white rounded p-4 mb-4 mx-4"
+      className="text-lg font-bold bg-white rounded p-4 mb-4 mr-4"
     >
       {options.map((option) => (
         <option key={option} value={option}>
