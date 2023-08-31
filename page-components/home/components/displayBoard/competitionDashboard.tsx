@@ -68,8 +68,8 @@ export default function CompetitionDashBoard({
           setSelectedEventIndex={setSelectedEventIndex}
           gender={gender}
           event={event}
-          setGender={setGender}
-          setEvent={setEvent}
+          setGender={setGender as React.Dispatch<React.SetStateAction<string>>}
+          setEvent={setEvent as React.Dispatch<React.SetStateAction<string>>}
         />
 
         <div className="flex flex-col justify-between align-center shadow-lg">
